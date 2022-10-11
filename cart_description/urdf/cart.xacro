@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<robot name="cart" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find cart_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find cart_description)/urdf/cart.trans" />
+<xacro:include filename="$(find cart_description)/urdf/cart.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.014432595354577096 0.02208976967259574 0.055889182567828766" rpy="0 0 0"/>
+    <mass value="1.4293825523394872"/>
+    <inertia ixx="0.001546" iyy="0.005883" izz="0.006346" ixy="5.3e-05" iyz="1.7e-05" ixz="0.000274"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cart_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cart_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="old_component__1__1">
+  <inertial>
+    <origin xyz="-3.5645212309587393e-07 -0.0025003102705525512 -4.79092691907379e-07" rpy="0 0 0"/>
+    <mass value="0.30826877913349837"/>
+    <inertia ixx="0.000193" iyy="0.000385" izz="0.000193" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.075877 0.032225 -0.043581" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cart_description/meshes/old_component__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.075877 0.032225 -0.043581" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cart_description/meshes/old_component__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="old_component__2__1">
+  <inertial>
+    <origin xyz="-3.564521194876491e-07 0.002499689729444046 -4.790926921155458e-07" rpy="0 0 0"/>
+    <mass value="0.30826877913349837"/>
+    <inertia ixx="0.000193" iyy="0.000385" izz="0.000193" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.075877 -0.077775 -0.043581" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cart_description/meshes/old_component__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.075877 -0.077775 -0.043581" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cart_description/meshes/old_component__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="old_component__3__1">
+  <inertial>
+    <origin xyz="-1.208090380649951e-07 -2.432370512193971e-07 0.003999520907307208" rpy="0 0 0"/>
+    <mass value="0.01972920186454389"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.068288 -0.016836 -0.078581" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cart_description/meshes/old_component__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.068288 -0.016836 -0.078581" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cart_description/meshes/old_component__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
